@@ -1,7 +1,12 @@
 import requests, math # We also import the maths library because it provides some functions we need
 from datetime import datetime
 
-API_KEY = "fc05950f-2629-49c3-a11e-e50197f12b17" # Replace with your API key
+#Although this module is not implemented yet, it will be in later versions/when the API is actually stable
+Fileapi = open("c:\\python\\APIHYPIXEL.txt", "r")
+APILIST = []
+APILIST = Fileapi.readlines()
+
+API_KEY = APILIST[0] # Replace with your API key
 
 # These are just values used to calculate the level (don't worry about them too much)
 BASE = 10_000
