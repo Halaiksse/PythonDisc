@@ -8,11 +8,11 @@ import random
 
 
 
-bot = commands.Bot(command_prefix=".", help_command=None) # You can set your prefix to be anything you desire!
+bot = commands.Bot(command_prefix=".", help_command=None)
 
 
 @bot.event
-async def on_ready(): # This function will be run by the discord library when the bot has logged in
+async def on_ready(): 
     print("Logged in successfuly as " + bot.user.name)
 
 @bot.command() 
